@@ -1,0 +1,50 @@
+<section>
+  <h2>Edit Data Tanaman</h2>
+  <p class="subtitle">
+    Perbarui lokasi dan catatan perawatan tanamanmu.
+  </p>
+
+  <div class="info-box">
+    <form id="form-edit" novalidate>
+      <p>
+        <label for="nama-tanaman"><strong>Nama tanaman</strong></label>
+        <input id="nama-tanaman" value="Monstera" readonly>
+      </p>
+
+      <p>
+        <label for="lokasi-tanaman"><strong>Lokasi tanaman</strong></label>
+        <input
+          id="lokasi-tanaman"
+          name="lokasi"
+          value="Teras rumah"
+          maxlength="100"
+          required
+        >
+      </p>
+
+      <p>
+        <label for="catatan-tanaman">
+          <strong>Catatan perawatan</strong>
+        </label>
+
+        <textarea
+          id="catatan-tanaman"
+          name="catatan"
+          rows="4"
+          maxlength="500"
+          required
+        >Periksa kondisi media tanam sebelum menyiram.</textarea>
+      </p>
+
+      <button type="submit" class="button">
+        Simpan Perubahan
+      </button>
+
+      <p id="pesan-edit" role="status"></p>
+    </form>
+  </div>
+
+  <p class="subtitle" style="margin-top: 20px;">
+    Demo: perubahan disimpan di browser ini menggunakan localStorage.
+  </p>
+</section>

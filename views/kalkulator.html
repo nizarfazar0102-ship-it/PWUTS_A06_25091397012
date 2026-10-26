@@ -1,0 +1,79 @@
+<section id="kalkulator">
+  <h2>Kalkulator Air &amp; Pupuk</h2>
+
+  <p class="subtitle">
+    Pilih jenis tanaman dan ukuran pot untuk mencoba simulasi
+    kebutuhan air dan pupuk.
+  </p>
+
+  <div class="info-box">
+    <form id="form-kalkulator">
+      <div style="margin-bottom: 18px;">
+        <label for="jenis-tanaman">
+          <strong>Jenis tanaman</strong>
+        </label>
+
+        <select
+          id="jenis-tanaman"
+          name="jenis"
+          required
+          style="display: block; width: 100%; padding: 12px;
+                 margin-top: 8px; border: 1px solid #bccbb7;
+                 border-radius: 8px; font: inherit;"
+        >
+          <option value="">-- Pilih tanaman --</option>
+          <option value="monstera">Monstera</option>
+          <option value="kaktus">Kaktus</option>
+          <option value="sirih-gading">Sirih Gading</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 18px;">
+        <label for="ukuran-pot">
+          <strong>Diameter pot (cm)</strong>
+        </label>
+
+        <input
+          type="number"
+          id="ukuran-pot"
+          name="diameter"
+          min="5"
+          max="60"
+          step="1"
+          placeholder="Contoh: 20"
+          required
+          style="display: block; width: 100%; padding: 12px;
+                 margin-top: 8px; border: 1px solid #bccbb7;
+                 border-radius: 8px; font: inherit;"
+        >
+
+        <small>Masukkan angka bulat antara 5–60 cm.</small>
+      </div>
+
+      <button
+        type="submit"
+        class="button"
+        style="border: none; cursor: pointer; font: inherit;"
+      >
+        Hitung Kebutuhan
+      </button>
+    </form>
+  </div>
+
+  <div
+    id="hasil-kalkulator"
+    class="info-box"
+    aria-live="polite"
+    style="margin-top: 20px;"
+    hidden
+  >
+    <h3>Hasil Simulasi</h3>
+    <p id="hasil-air"></p>
+    <p id="hasil-pupuk"></p>
+  </div>
+
+  <p style="font-size: 13px; color: #697466; margin-top: 20px;">
+    Catatan: Perhitungan ini merupakan simulasi untuk tugas
+    pemrograman, bukan takaran perawatan tanaman yang baku.
+  </p>
+</section>
